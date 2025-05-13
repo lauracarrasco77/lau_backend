@@ -3,6 +3,8 @@ import { obtenerVentasConDetalles, obtenerVentas, eliminarVentas,registrarVenta,
 
 const router = Router();
 
+//ruta para obtener una venta por si ID
+
 // Ruta para obtener todos los usuarios.
 router.get('/venta', obtenerVentasConDetalles);
 

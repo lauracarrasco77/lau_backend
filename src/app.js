@@ -14,11 +14,14 @@ import ontenerempleados from './routes/empleados.js';
  
 const app = express();
 
+
 // Habilitar CORS para cualquier origen
 app.use(cors({
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
     allowedHeaders: ['Content-Type'],
 }));
+app.use(express.json({ limit: '10mb' })); // Aumenta a 10 MB
+app.use(express.urlencoded({ limit: '10mb', extended: true })); 
 
 app.use(express.json());
 

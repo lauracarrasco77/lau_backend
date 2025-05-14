@@ -11,4 +11,5 @@ router.get('/producto/:id', obtenerProducto);
 
 router.post('/registrarproducto', registrarProducto);
 
+
 export default router;

@@ -9,6 +9,7 @@ import productos from './routes/productos.routes.js';
 import rutasDetallesVentas from './routes/detalles_ventas.routes.js';
 import rutasdetallecompra from './routes/detallecompra.routes.js';
 import rutascompra from './routes/compra.routes.js';
+import rutaestadistica from "./routes/estadisticas.routes.js";
 
 import ontenerempleados from './routes/empleados.js';
  
@@ -35,6 +36,8 @@ app.use('/api', rutasDetallesVentas);
 app.use('/api', ontenerempleados);
 app.use('/api', rutasdetallecompra);
 app.use('/api', rutascompra);
+app.use('/api', rutaestadistica);
+
 
 // Manejo de rutas no encontradas
 app.use((req, res, next) => {

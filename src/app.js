@@ -10,8 +10,8 @@ import rutasDetallesVentas from './routes/detalles_ventas.routes.js';
 import rutasdetallecompra from './routes/detallecompra.routes.js';
 import rutascompra from './routes/compra.routes.js';
 import rutaestadistica from "./routes/estadisticas.routes.js";
-
 import ontenerempleados from './routes/empleados.js';
+import rutasIA from './routes/ia.routes.js';
  
 const app = express();
 
@@ -37,6 +37,7 @@ app.use('/api', ontenerempleados);
 app.use('/api', rutasdetallecompra);
 app.use('/api', rutascompra);
 app.use('/api', rutaestadistica);
+app.use('/ia', rutasIA);
 
 
 // Manejo de rutas no encontradas
